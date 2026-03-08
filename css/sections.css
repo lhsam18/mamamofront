@@ -1,0 +1,67 @@
+/* General section styling */
+.page-section {
+     position: relative;
+  z-index: 1;
+  min-height: 100vh;        /* Full viewport height */
+  width: 100%;              /* Full width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-size: cover;   /* Scale image to cover section */
+  background-position: center;
+}
+
+
+
+/* Individual section backgrounds */
+.section1 {
+  background-image: url('../images/hotel3.jpg');
+}
+
+.section2 {
+  background-image: url('');
+  background-color: seashell;
+  color: saddlebrown;
+}
+
+.section3 {
+  background-image: url('');
+  background-color: seashell;
+  color: saddlebrown;
+}
+
+.section4 {
+  background-image: url('');
+  background-color: seashell;
+  color: saddlebrown;
+}
+
+
+/* Optional: smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+hr {
+  border: none;
+  height: 120px;              
+  background-color: #5C4033;   
+  margin: 0;
+  border: none;
+  outline: none;
+
+}
+
+.divider{
+  border: none;
+  height: 160px;              
+  background-color: #5C4033;   
+  margin: 0;
+  border: none;
+  outline: none;
+}
+
+
