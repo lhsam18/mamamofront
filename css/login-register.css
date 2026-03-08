@@ -31,8 +31,8 @@ header {
 .navigation {
   display: flex;
   justify-content: space-between;
-  align-items: center;   /* centers items vertically */
-  height: 80px;          /* fixed height for the nav bar */
+  align-items: center;   
+  height: 80px;        
 }
 
 .navigation a {
@@ -92,10 +92,10 @@ header {
 
 /* Wrapper */
 .wrapper {
-  position: fixed;              /* stays above everything */
-  top: 50%;                     /* center vertically */
-  left: 50%;                    /* center horizontally */
-  transform: translate(-50%, -50%) scale(0); /* center + hidden by default */
+  position: fixed;             
+  top: 50%;                    
+  left: 50%;                 
+  transform: translate(-50%, -50%) scale(0); 
   width: 400px;
   height: 440px;
   background: transparent;
@@ -108,7 +108,7 @@ header {
   align-items: center;
   overflow: hidden;
   transition: transform .5s ease, height .2s ease;
-  z-index: 1000;                /* ensures popup is above sections */
+  z-index: 1000;                /* para sa position-popup/button */
 }
 
 .wrapper.active-popup {
