@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login/Register</title>
+
+  <!-- Link for the CSS files -->
+  <link rel="stylesheet" href="css/login-register.css">
+  <link rel="stylesheet" href="css/sections.css">
+
+</head>
+<body>
+  <header>
+    <h2 class="logo">Logo</h2>
+    <nav class="navigation">
+      <a href="#">HOME</a>
+      <a href="rooms.html">ROOMS</a>
+      <a href="#section3">GALLERY</a>
+      <a href="reservations.html">RESERVATIONS</a>
+      <a href="profile.html">PROFILE</a>
+      <a href="#section4">CONTACT</a>
+      <a href="#section4">ABOUT</a>
+      <button class="btnLogin-popup">Login</button>
+    </nav>
+  </header>
+
+  <!-- Scrollable homepage sections -->
+  <main>
+    <section id="section1" class="page-section section1">
+      <h2>Welcome</h2>
+      <p>This is the first section.</p>
+    </section>
+    <hr class="divider">
+
+    <section id="section2" class="page-section section2">
+      <h2>parang onting description abt sa hotel</h2>
+      <p>somethinglike that.</p>
+    </section>
+    <hr>
+
+    <section id="section3" class="page-section section3">
+      <h2>Gallery</h2>
+      <p>Photos and highlights.</p>
+    </section>
+    <hr>
+
+    <section id="section4" class="page-section section4">
+      <h2>Contact Us</h2>
+      <p>baka pwede pagsamahin ung about and contact sa section na to.</p>
+    </section>
+  </main>
+
+  <div class="wrapper">
+    <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+
+    <!-- Login Form -->
+    <div class="form-box login">
+      <h2>Login</h2>
+      <form>
+        <div class="inputbox">
+          <span class="icon"><ion-icon name="mail"></ion-icon></span>
+          <input type="email" required>
+          <label>Email Address</label>
+        </div>
+        <div class="inputbox">
+          <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+          <input type="password" required>
+          <label>Password</label>
+        </div>
+        <div class="remember">
+          <label><input type="checkbox">Remember me</label>
+          <a href="#" class="forgot-link">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <div class="login-signup">
+          <p>Don't have an account? <a href="#" class="signup-link">Sign-up</a></p>
+        </div>
+      </form>
+    </div>
+
+    <!-- Signup Form -->
+    <div class="form-box signup">
+      <h2>Sign-up</h2>
+      <form>
+        <div class="inputbox">
+          <span class="icon"><ion-icon name="person"></ion-icon></span>
+          <input type="text" required>
+          <label>Username</label>
+        </div>
+        <div class="inputbox">
+          <span class="icon"><ion-icon name="mail"></ion-icon></span>
+          <input type="email" required>
+          <label>Email Address</label>
+        </div>
+        <div class="inputbox">
+          <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+          <input type="password" required>
+          <label>Password</label>
+        </div>
+        <div class="remember">
+          <label><input type="checkbox">I agree to the terms & conditions</label>
+        </div>
+        <button type="submit" class="btn">Create an account</button>
+        <div class="login-signup">
+          <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+        </div>
+      </form>
+    </div>
+
+    <!-- Forgot Password Form -->
+    <div class="form-box forgot">
+      <h2>Reset Password</h2>
+      <form id="forgotForm">
+        <div class="inputbox">
+          <span class="icon"><ion-icon name="mail"></ion-icon></span>
+          <input type="email" required>
+          <label>Current Email Address</label>
+        </div>
+        <div class="inputbox">
+          <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+          <input type="password" required>
+          <label>Current Password</label>
+        </div>
+        <div class="inputbox">
+          <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+          <input type="password" id="newPassword" required>
+          <label>New Password</label>
+        </div>
+        <div class="inputbox">
+          <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+          <input type="password" id="confirmPassword" required>
+          <label>Confirm New Password</label>
+        </div>
+        <button type="submit" class="btn">Reset</button>
+        <div class="login-signup">
+          <p>Remembered your password? <a href="#" class="login-link">Login</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
