@@ -35,9 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
     div.className = "room-select";
     div.innerHTML = `
       <span>Room ${number}:</span>
-      Adults:
+      <ion-icon name="person"></ion-icon>Adults:
       <select class="adults"></select>
-      Children:
+      <ion-icon name="people"></ion-icon>Children:
       <select class="children"></select>
       <button class="remove-room">Remove</button>
       <button class="add-room-inline">+ Add Room</button>
