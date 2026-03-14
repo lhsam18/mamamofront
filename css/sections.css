@@ -2,15 +2,15 @@
 .page-section {
      position: relative;
   z-index: 1;
-  min-height: 100vh;        /* Full viewport height */
-  width: 100%;              /* Full width */
+  min-height: 100vh;        
+  width: 100%;              
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: white;
-  background-size: cover;   /* Scale image to cover section */
+  background-size: cover;   
   background-position: center;
 }
 
@@ -18,37 +18,48 @@
 
 /* Individual section backgrounds */
 .section1 {
-  background-image: url('../images/hotel3.jpg');
+  background-image: url('../images/homebgenhanced.jpg');
+   background-size: cover;     
+  background-position: center;   
+  background-repeat: no-repeat; 
 }
+
 
 .section2 {
   background-image: url('');
-  background-color: seashell;
-  color: saddlebrown;
+   background: linear-gradient(to bottom, #f5f5dc, #ffffff);
+  color: #5C4033;
 }
 
 .section3 {
   background-image: url('');
-  background-color: seashell;
-  color: saddlebrown;
+   background: linear-gradient(to bottom, #f5f5dc, #ffffff);
+  color: #5C4033;
 }
 
 .section4 {
   background-image: url('');
-  background-color: seashell;
-  color: saddlebrown;
+ background: linear-gradient(to bottom, #e9ce98, #ffffff);
+  color: #5C4033;
+}
+
+.section5 {
+  background-image: url('');
+   background: linear-gradient(to right, #f5f5dc, #ffffff);
+  color: #5C4033;    
+  min-height: 600px; 
+  padding: 40px 20px; 
 }
 
 
-/* Optional: smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
 hr {
   border: none;
-  height: 120px;              
-  background-color: #5C4033;   
+  height: 10px;              
+  background: linear-gradient(to right, #0d0d0d, #b0b0b0);   
   margin: 0;
   border: none;
   outline: none;
@@ -57,11 +68,11 @@ hr {
 
 .divider{
   border: none;
-  height: 160px;              
-  background-color: #5C4033;   
+  background: linear-gradient(to right, #0d0d0d, #b0b0b0);
+  height: 50px;
   margin: 0;
-  border: none;
-  outline: none;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,1);
 }
 
 

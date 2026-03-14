@@ -3,10 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+ font-family: 'Crimson Text Regular', serif; 
 }
-
-
 
 /* Header */
 header {
@@ -15,37 +13,45 @@ header {
   left: 0;
   width: 100%;
   padding: 20px 100px;
-  background: floralwhite;
+  background: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 99;
+  justify-content: flex-end;
 }
 
-.logo {
-  font-size: 2em;
-  color: #5C4033;
-  user-select: none;
+.logocenter {
+  position: absolute;
+  display: flex;
+  justify-content: center; 
+  margin-top: -260px;        
 }
+
+.logocenter img {
+  width: 400px;   
+  height: auto;   
+}
+
 
 .navigation {
   display: flex;
   justify-content: space-between;
-  align-items: center;   /* centers items vertically */
-  height: 80px;          /* fixed height for the nav bar */
+  align-items: center;   
+  height: 80px;         
 }
 
 .navigation a {
   position: relative;
+  left: 1050px;
   font-size: 1.3em;
-  color: #5C4033;
+  font-weight: normal;
+  color: white;
   text-decoration: none;
-  font-weight: 600;
-  font-family: serif, 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   margin-left: 40px;
   transition: .5s;
-  justify-content: space-between;
-  align-items: space-between;
+  white-space: nowrap;
 }
 
 .navigation a::after {
@@ -65,50 +71,47 @@ header {
 .navigation a:hover::after {
   transform: scaleX(1);
   transform-origin: left;
-  color: #5C4033;
 }
 
 .btnLogin-popup {
   width: 130px;
   height: 50px;
-  background: transparent;
-  border: 2px solid white;
+  font-weight: normal;
+  background: #3F321F;
+  border: 0.5px solid #3f3250;
   border-radius: 6px;
   cursor: pointer;
   font-size: 1.3em;
-  font-family: serif, 'Times New Roman', Times, serif;
-  color: #5C4033;
-  font-weight: 600;
-  margin-left: 40px;
+    font-family: 'Crimson Text Regular', serif; 
+  color: white;
+  margin-left: 1100px;
   transition: .5s;
-  border-color: #5C4033;
-  
 }
 
 .btnLogin-popup:hover {
-  background: tan;
+  background: goldenrod;
   color: black;
 }
 
 /* Wrapper */
 .wrapper {
-  position: fixed;              /* stays above everything */
-  top: 50%;                     /* center vertically */
-  left: 50%;                    /* center horizontally */
-  transform: translate(-50%, -50%) scale(0); /* center + hidden by default */
-  width: 400px;
-  height: 440px;
+  position: fixed;              
+  top: 50%;                   
+  left: 50%;                
+  transform: translate(-50%, -50%) scale(0); 
+  width: 500px;
+  height: 500px;
   background: transparent;
   border: 2px solid rgba(255, 255, 255, .5);
   border-radius: 20px;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(50px);
   box-shadow: 0 0 30px rgba(0, 0, 0, .5);
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   transition: transform .5s ease, height .2s ease;
-  z-index: 1000;                /* ensures popup is above sections */
+  z-index: 1000;                
 }
 
 .wrapper.active-popup {
@@ -116,7 +119,8 @@ header {
 }
 
 .wrapper.active {
-  height: 520px;
+  height: 750px; 
+  
 }
 
 .wrapper.active-forgot {
@@ -128,6 +132,7 @@ header {
   width: 100%;
   padding: 40px;
   transition: transform .18s ease;
+  
 }
 
 .form-box.login {
@@ -135,13 +140,13 @@ header {
 }
 
 .wrapper.active .form-box.login {
-  transform: translateX(-400px);
+  transform: translateX(-500px);
   transition: none;
 }
 
 .form-box.signup {
   position: absolute;
-  transform: translateX(400px);
+  transform: translateX(500px);
   transition: none;
 }
 
@@ -152,7 +157,7 @@ header {
 
 .form-box.forgot {
   position: absolute;
-  transform: translateX(400px);
+  transform: translateX(500px);
   transition: none;
 }
 
@@ -163,7 +168,7 @@ header {
 
 .wrapper.active-forgot .form-box.login,
 .wrapper.active-forgot .form-box.signup {
-  transform: translateX(-400px);
+  transform: translateX(-500px);
   transition: none;
 }
 
@@ -184,13 +189,15 @@ header {
   z-index: 1000;
 }
 
-
 /* Inputs */
 .form-box h2 {
-  font-size: 2em;
+  font-size: 1.8em;
+  font-weight: normal;
   color: black;
+  font-family: 'Crimson Text Regular', serif; 
   text-align: center;
 }
+
 
 .inputbox {
   position: relative;
@@ -198,21 +205,23 @@ header {
   height: 50px;
   border-bottom: 2px solid black;
   margin: 30px 0;
+  font-family: 'Crimson Text Regular', serif; 
 }
 
 .inputbox label {
   position: absolute;
   top: 20px;
   left: 5px;
-  font-size: 1em;
+  font-size: 1.3em;
   color: black;
-  font-weight: 500;
+  font-weight: normal;
   transition: .5s;
+  font-family: 'Crimson Text Regular', serif; 
 }
 
 .inputbox input:focus ~ label,
 .inputbox input:valid ~ label {
-  top: -5px;
+  top: -15px;
 }
 
 .inputbox input {
@@ -221,10 +230,11 @@ header {
   background: transparent;
   border: none;
   outline: none;
-  font-size: 1em;
+  font-size: 1.1em;
   color: black;
-  font-weight: 600;
+  font-weight: normal;
   padding: 0 35px 0 5px;
+  font-family: 'Crimson Text Regular', serif; 
 }
 
 .inputbox .icon {
@@ -235,6 +245,29 @@ header {
   line-height: 57px;
 }
 
+/* Date of Birth Section */
+.dob-box {
+  margin: 20px 0;
+  color: black;
+  font-weight: 500;
+}
+
+.dob-select {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.dob-select select {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 6px;
+  background: transparent;
+  font-size: 1em;
+  color: black;
+}
+
 /* Remember Section */
 .remember {
   font-size: .9em;
@@ -243,10 +276,13 @@ header {
   margin: -15px 0 15px;
   display: flex;
   justify-content: space-between;
+  font-family: 'Crimson Text Regular', serif; 
 }
 
 .remember label input {
   margin-right: 3px;
+    font-family: 'Crimson Text Regular', serif; 
+    
 }
 
 .remember a {
