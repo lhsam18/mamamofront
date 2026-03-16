@@ -20,5 +20,5 @@ document.addEventListener('DOMContentLoaded', function() {
   setInterval(function() {
     index = (index + 1) % quotes.length;
     showQuote(index);
-  }, 3000);
+  }, 2000);
 });
